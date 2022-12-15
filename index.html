@@ -31,15 +31,15 @@
     </header>
     <main>
         <div class="main">
-            <div class="sbm-container">
+            <div class="sbm-container" id="container-sbm-m">
                 <span class="about">
-                    <i class="fa-sharp fa-solid fa-circle-info"></i>
-                    <h2>Sobre mim</h2>
+                    <i id="absty" class="fa-sharp fa-solid fa-circle-info"></i>
+                    <h2 id="sth2">Sobre mim</h2>
                 </span>
                 <hr style="width: 10.7rem;">
                 <span style="margin: 1rem auto;">
-                    <p class="sbm">Olá! Eu sou o Davi Rodrigues, tenho 13 anos. <br> Sou desenvolvedor de <span
-                            style="color:rgb(255, 255, 0)">Front-End</span> </p>
+                    <p class="sbm" id="sbm-p">Olá! Eu sou o Davi Rodrigues, tenho 13 anos. <br> Sou desenvolvedor de
+                        <span style="color:rgb(255, 255, 0)">Front-End</span> </p>
                 </span>
             </div>
             <!-- .................................................... -->
@@ -85,47 +85,54 @@
             </div>
             <!-- .................................................... -->
             <div id="contato" class="contato-container">
+                <br>
+                <br>
+                <b>
+                    <br>
+                    <br>
+                    <br>
+                </b>
                 <span class="about">
                     <i class="fa fa-phone"></i>
                     <h2>Contato</h2>
                 </span>
                 <hr style="width: 19.5rem;">
                 <span style="margin: 1rem auto;">
-                    <h1>Em breve...(resolvendo bug)</h1>
+                    <h1></h1>
                 </span>
-                    <!-- <form action="https://api.staticforms.xyz/submit" method="POST">
-                        <div class="form-control">
-                            <input type="text" name="nome" id="nome" required="">
-                            <label>
-                                <span style="transition-delay:0ms">E</span><span
-                                    style="transition-delay:50ms">-</span><span
-                                    style="transition-delay:100ms">m</span><span
-                                    style="transition-delay:150ms">a</span><span
-                                    style="transition-delay:200ms">i</span><span style="transition-delay:250ms">l</span>
-                            </label>
-                        </div>
-                        <input type="hidden" name="accessKey" value="d00d639b-2247-4207-b869-34295c1b75fb">
-                        <label class="inp" for="inp">
+                <div id="contato" class="container-contato">
+                    <div id="conteiner-contato" class="conteiner-contato" style="height: 550px;">
+                        <form action="https://api.staticforms.xyz/submit" method="post">
+                            <h1 class="titulo-contato">Preencha abaixo</h1>
+                            <br>
+                            <div class="input-group">
+                                <input required="" type="text" name="text" autocomplete="off" class="input">
+                                <label class="user-label">Digite seu nome</label>
+                            </div>
+                            <input type="hidden" name="accessKey" value="d00d639b-2247-4207-b869-34295c1b75fb">
+                            <b>
+                                <br>
+                                <br>
+                            </b>
+                            <div class="input-group">
+                                <input required="" type="email" name="email" id="email" autocomplete="off"
+                                    class="input">
+                                <label class="user-label">E-mail</label>
+                            </div>
+                            <b>
+                                <br>
+                                <br>
+                            </b>
                             <textarea name="message" id="mensagem" cols="25" rows="5px"
                                 placeholder="Digite sua mensagem" required=""></textarea>
-                        </label>
-                        <button>
-                            <div class="svg-wrapper-1">
-                                <div class="svg-wrapper">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-                                        <path fill="none" d="M0 0h24v24H0z"></path>
-                                        <path fill="currentColor"
-                                            d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z">
-                                        </path>
-                                    </svg>
-                                </div>
-                            </div>
-                            <span>Enviar</span>
-                        </button>
-                    </form> -->
-                </span>
-            </div>
-        </div>
+                            <b>
+                                <br>
+                                <br>
+                            </b>
+                            <button type="submit" id="enviar">Enviar</button>
+                        </form>
+                    </div>
+                </div>
     </main>
     <script src="script.js"></script>
 </body>
